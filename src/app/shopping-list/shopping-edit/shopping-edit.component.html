@@ -6,15 +6,15 @@
                     <label for="name">Name</label>
                     <input id="name" class="form-control" #nameInput>
                 </div>
-                <div class="col-sm-2 form-group ">
-                    <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'GREEN'">DIRECTIVES</p>
+                <div class="col-sm-2 form-group">
+                    <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'green'">DIRECTIVES</p>
                     <label for="amount">Amount</label>
                     <input type="number" id="amount" class="form-control" #amountInput>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-xs-12 ">
-                    <button type="button" class="btn btn-success" (click)="onAddItem()">Add</button>
+                    <button type="button" (click)="onAddItem()" md-raised-button>Add</button>
                     <button type="button" class="btn btn-danger">Delete</button>
                     <button type="button" class="btn btn-primary">Clear</button>
                 </div>

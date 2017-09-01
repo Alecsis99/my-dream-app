@@ -10,6 +10,8 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { BetterHighlightDirective } from './better-highlight.directive';
+import { MdButtonModule } from '@angular/material';
+import { MdInputModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { BetterHighlightDirective } from './better-highlight.directive';
     BetterHighlightDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MdButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
